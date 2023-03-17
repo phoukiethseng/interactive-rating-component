@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.rating-card h1, p {
+  font-style: Overpass;
+  margin: 0px;
+}
+
+.rating-card h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.rating-card p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.rating-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 370px;
+  border-radius: 17px;
+  padding: 30px;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.fav-star {
+  background-color: hsl(213, 19%, 18%);
+  padding: 12px;
+  border-radius: 100%;
+  box-sizing: content-box;
+  cursor: pointer;
+
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 0px;
+  border-width: 0px;
+  border-radius: 18px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.rating-selection-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+
+.rating-selection-container span {
+  background-color: hsl(210, 15%, 10%);
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 47px;
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+}
+
+.rating-selection-container .rate-item-active {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.rating-selection-container span:hover {
+  background-color: hsl(213, 19%, 18%);
+  cursor: pointer;
+}
+
+.rating-indicator {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  padding: 6px 20px;
+}
